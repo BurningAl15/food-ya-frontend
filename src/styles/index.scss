@@ -1,0 +1,74 @@
+@import "variables";
+
+.App {
+  text-align: center;
+  /* background-image: url('https://i.ibb.co/GH040rw/logo-color.png')!important;
+  background-color: rgba(0, 0, 0, 0.1)!important; */
+  &.light {
+    background: $color_cream;
+    color: #4c4c4c;
+  }
+  &.dark {
+    background: #615d5d;
+    color: $color_cream;
+    background-image: none;
+    filter: brightness(80%);
+  }
+}
+
+body {
+  font-family: "Readex Pro", sans-serif;
+  background: $color_cream;
+}
+
+a {
+  color: $color_cream !important;
+  &:hover {
+    color: $color_cream !important;
+  }
+}
+
+/* Navbar */
+
+/* Banner */
+
+/* Grid */
+.grid-section {
+  min-height: inherit;
+  .divUlType {
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+  }
+}
+/* Footer */
+
+.landing-page {
+  min-height: 76vh;
+}
+
+.full-width-button {
+  max-width: calc(100% - 20px);
+  width: 100%;
+  margin: auto !important;
+}
+
+.error {
+  color: $color_error;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 7px;
+}
+
+.success {
+  color: $color_success;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 7px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
